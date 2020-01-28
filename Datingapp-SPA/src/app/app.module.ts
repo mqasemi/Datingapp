@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { ValuesComponent } from './values/values.component';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NavComponent } from './nav/nav.component';
 
 
 
 @NgModule({
    declarations: [
       AppComponent,
-      ValuesComponent
+      ValuesComponent,
+      NavComponent
    ],
    imports: [
       BrowserModule,
