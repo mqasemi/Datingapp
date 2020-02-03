@@ -6,7 +6,8 @@ import { ValuesComponent } from './values/values.component';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
-
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './_services/Auth.service';
 
 
 @NgModule({
@@ -17,9 +18,12 @@ import { NavComponent } from './nav/nav.component';
    ],
    imports: [
       BrowserModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule
    ],
-   providers: [],
+   providers: [
+      AuthService
+   ],
    bootstrap: [
       AppComponent
    ]
