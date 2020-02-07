@@ -2,19 +2,19 @@
 
  <div class="container">
 
-  <a class="navbar-brand" href="#">Datting App</a>
+  <a class="navbar-brand" [routerLink]="['/home']"  >Datting App</a>
   
 
   
-  <ul *ngIf="logedin()" class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Matches </a>
+  <ul *ngIf="logedin()" class="navbar-nav mr-auto" >
+    <li class="nav-item active" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/member']"  >Matches </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Lists</a>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link"  [routerLink]="['/lists']"  >Lists</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Messages</a>
+    <li class="nav-item" routerLinkActive="active" >
+      <a class="nav-link " [routerLink]="['/messages']"  >Messages</a>
     </li>
  
 
