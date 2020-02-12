@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DatingApp.API.Migrations
 {
-    public partial class userentityextentionphotoadd : Migration
+    public partial class modelbugfix : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "Coutry",
+                name: "Country",
                 table: "Users",
                 nullable: true);
 
@@ -99,7 +99,7 @@ namespace DatingApp.API.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "Coutry",
+                name: "Country",
                 table: "Users");
 
             migrationBuilder.DropColumn(

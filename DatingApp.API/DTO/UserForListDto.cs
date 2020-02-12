@@ -12,7 +12,7 @@ namespace DatingApp.API.DTO
         public DateTime Created { get; set; }
         public DateTime LastActive { get; set; }
         public string City { get; set; }    
-        public string Coutry { get; set; }
+        public string Country { get; set; }
         public string PhotoUrl { get; set; }
     }
 }
